@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <script src="bhagat quiz java.js"></script>
+    <style>
+        html{
+              background-color: white;
+              background-image: url(Bhagat\ dark\ 2.jpg);
+              background-repeat:no-repeat ;
+              }
+
+        body{
+            background-image: url('35986600.jpg');
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-attachment: fixed;
+        }
+        .sub{
+            background-color: white;
+            font-weight: bolder;
+            border-radius: 5px;
+            margin: auto;
+            width: 1000px;
+            padding: 5px;
+            text-align: justify;
+            border:2px rgb(0, 0, 0) solid;
+            
+            
+        }
+
+        .information{
+            color: rgb(0, 0, 0);
+            transform: translateX(2000px);
+            background-color:rgb(255, 255, 255);
+            border-radius: 5px;
+            padding: 5px;
+            
+        }
+        .head{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        ol{
+            display: flex;
+            flex-direction: column;
+            
+            margin-right: auto;
+
+        }
+        h3,p,h2{
+            background-color: whitesmoke;
+            width: fit-content;
+            border-radius: 5px;
+            padding: 5px;
+
+        }
+        li{
+            background-color: rgb(255, 251, 251);
+            margin: 5px;
+            width: 200px;
+            padding: 5px;
+            border-radius: 5px;
+            transition-duration: 0.2s;
+            color:rgb(255, 255, 255);
+        }
+        li:hover{
+            transform: scale3d(1.05,1.05,1.05);
+            transition-duration: 0.2s;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        button{
+            background-color: rgba(255, 183, 0, 0);
+            border: none;
+            width: 100%;
+
+        }
+        
+        .score1{
+            background-color: rgb(236, 13, 13);
+            border-radius: 5px;
+            padding: 10px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            transform: translateX(2000px);
+            color: rgb(0, 0, 0);
+            font: 300;
+            
+        }
+        #view{
+            background-color: rgb(226, 90, 0);
+            border-radius: 5px;
+            padding:5px;
+            margin-left: 45%;
+        }
+
+        @keyframes anim1{
+            0%{
+                transform: translateX(2000px);
+            }
+            100%{
+                transform: translateX(-30px);
+            }
+        }
+        @keyframes anim2{
+            0%{
+                transform: translateX(2000px);
+            }
+            100%{
+                transform: translateX(0px);
+            }
+        }
+        hr{
+            width: 1000px;
+        }
+        #view{
+            width: fit-content;
+            margin-bottom: 30px;
+            margin-right: auto;
+        }
+        .information{
+            display: none;
+        }
+        
+        #section1{
+            font-weight: bolder;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h2 class="head">Bhagat Singh Quiz</h2>
+        <div id="sub1" class="sub">
+            <div id="section1">
+                <h3 id="question1">Q-1 When  was Bhagat Singh born?</h3>
+                <div class="content" id="content1">
+                    <ol type="A">
+                        <li id="option1a"><button onclick="correct1()" ><b>27th September 1907</b></button></li>
+                        <li id="option1b"><button onclick="incorrect1()" ><b>23rd March 1931</button></li>
+                        <li id="option1c"><button onclick="incorrect1()" >28th September 1907 </button></li>
+                        <li id="option1d"><button onclick="incorrect1()" >14th February 1913</button></li>
+                    </ol>
+                    <div class="information" id="info1">Bhagat Singh was born into a Punjabi Sikh family on 27 September 1907[1] in the village of Banga in the Lyallpur district of the Punjab in what was then British India and is today Pakistan; he was the second of seven children—four sons, and three daughters—born to Vidyavati and her husband Kishan Singh Sandhu
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr >
+        <div id="sub2" class="sub">
+            <div id="section2">
+                <h3 id="question2">Q-2 What was Bhagat Singh’s childhood nickname?</h3>
+                <div class="content" id="content2">
+                    <ol type="A">
+                        <li id="option2a"><button onclick="incorrect2()">Shaheed</button></li>
+                        <li id="option2b"><button onclick="correct2()">Rangila</button></li>
+                        <li id="option2c"><button onclick="incorrect2()">Rajguru</button></li>
+                        <li id="option2d"><button onclick="incorrect2()">Kranti</button></li>
+                    </ol>
+                    
+                    <div class="information" id="info2">Bhagat Singh's Childhood Nickname was rangila. which was given by his mother to him and later was caled by everyone.</div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+    
+        <div id="sub3" class="sub">
+            
+            <div id="section3">
+                <h3 id="question3">Q-3 Which incident deeply influenced Bhagat Singh’s political beliefs and actions</h3>
+                <div class="content" id="content3">
+                    <ol type="A">
+                        <li id="option3a"><button onclick="correct3()" >The Jaliawallan Bah Massacre</button></li>
+                        <li id="option3b"><button onclick="incorrect3()" >The Partition Of Bengal In 1905</button></li>
+                        <li id="option3c"><button onclick="incorrect3()" >The Quit India Movement</button></li>
+                        <li id="option3d"><button onclick="incorrect3()" >The Chaura Chauri Movement</button></li>
+                    </ol>
+
+
+                    <div class="information" id="info3"> He was particularly affected by the Jallianwala Bagh massacre (1919) and the violence against unarmed Akali protestors at Nankana Sahib.</div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="sub4" class="sub">
+            <div id="section4">
+                <h3 id="question4">Q-4 Bhagat Singh was executed in which of the following case?</h3>
+                <div class="content" id="content4">
+                    <ol type="A">
+                        <li id="option4a"><button onclick="incorrect4()" >Central Assembly Bomb Case</button></li>
+                        <li id="option4b"><button onclick="correct4()" >Lahori Conspiracy Case</button></li>
+                        <li id="option4c"><button onclick="incorrect4()" >Kakori Case</button></li>
+                        <li id="option4d"><button onclick="incorrect4()" >Dalhousie Square Bomb Case </button></li>
+                    </ol>
+
+                    <div class="information" id="info4">Bhagat Singh and his associates, Rajguru and Sukhdev were hanged to death in connection with the Lahore Conspiracy Case.</div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="sub5" class="sub">
+            <div id="section5">
+                <h3 id="question5">Q-5 When was Bhagat Singh executed?</h3>
+                <div class="content" id="content5">
+                    <ol type="A">
+                        <li id="option5a"><button onclick="incorrect5()" >23 March 1971</button></li>
+                        <li id="option5b"><button onclick="incorrect5()" >27 March 1931</button></li>
+                        <li id="option5c"><button onclick="incorrect5()" >26 March 1930</button></li>
+                        <li id="option5d"><button onclick="correct5()" >23 March 1931</button></li>
+                    </ol>
+
+                    <div class="information" id="info5">Bhagat Singh was executed on 23 March 1931 in Lahore Conspiracy Case at 7:30 pm</div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="sub6" class="sub">
+            <div id="section6">
+                <h3 id="question6">Q-6 Bhagat Singh was executed at the age of ____.</h3>
+                <div class="content" id="content6">
+                    <ol type="A">
+                        <li id="option6a"><button onclick="incorrect6()" >24</button></li>
+                        <li id="option6b"><button onclick="incorrect6()" >25</button></li>
+                        <li id="option6c"><button onclick="correct6()" >23</button></li>
+                        <li id="option6d"><button onclick="incorrect6()" >21</button></li>
+                    </ol>
+
+                    <div class="information" id="info6">Bhagat Singh was executed at the age of 23 years. His early execution made him a national hero of the Indian freedom struggle against colonial rule.</div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="sub7" class="sub">
+            <div id="section7">
+                <h3 id="question7">Q-7  An 18-foot tall bronze statue of Bhagat Singh was installed in ______.</h3>
+                <div class="content" id="content7">
+                    <ol type="A">
+                        <li id="option7a"><button onclick="correct7()" >Parliament Of India</button></li>
+                        <li id="option7b"><button onclick="incorrect7()" >Jalandhar City</button></li>
+                        <li id="option7c"><button onclick="incorrect7()" >National Matrys Memorial</button></li>
+                        <li id="option7d"><button onclick="incorrect7()" >None Of The Above</button></li>
+                    </ol>
+
+                    <div class="information" id="info7">An 18-foot tall bronze statue of Bhagat Singh was installed in the Parliament of India on 15 August 2008. His statue was installed next to the statues of former Prime Minister of India Indira Gandhi and Netaji Subhas Chandra Bose. .</div>
+
+                </div>
+            </div>
+        </div>
+       
+
+    <button id="view" onclick="view()">click here to view the score</button>
+    <div id="score" class="score1"></div>
+</body>
+</html>
